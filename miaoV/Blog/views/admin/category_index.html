@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin">管理首页</a></li>
+    <li class="active">分类列表</li>
+</ol>
+<h3>分类列表</h3>
+{% include 'page.html' %}
+<table class="table table-hover table-striped">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>分类名称</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for category in categories %}
+    <tr>
+        <td>{{category.id}}</td>
+        <td>{{category.name}}</td>
+        <td>
+            <a href="/admin/category/edit?id={{category.id}}">修改</a>
+            &nbsp;|&nbsp;
+            <a href="/admin/category/delete?id={{category.id}}">删除</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% include 'page.html' %}
+
+{% endblock %}
