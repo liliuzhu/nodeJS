@@ -1,0 +1,92 @@
+2018-02-28T11:05:47.954+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-02-28T11:05:48.367+0800 I CONTROL  [initandlisten] MongoDB starting : pid=6004 port=27018 dbpath=./db 64-bit host=LiLiuzhu-PC
+2018-02-28T11:05:48.367+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-02-28T11:05:48.367+0800 I CONTROL  [initandlisten] db version v3.6.2
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] git version: 489d177dbd0f0420a8ca04d39fd78d0a2c539420
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] modules: none
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] build environment:
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-28T11:05:48.368+0800 I CONTROL  [initandlisten] options: { config: "mongo.conf", net: { port: 27018 }, storage: { dbPath: "./db", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./db/logs/mongo.log", quiet: true } }
+2018-02-28T11:05:48.369+0800 I -        [initandlisten] Detected data files in ./db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-02-28T11:05:48.370+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3514M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-02-28T11:05:48.703+0800 I STORAGE  [initandlisten] WiredTiger message [1519787148:703529][6004:140707747730256], txn-recover: Main recovery loop: starting at 9/9856
+2018-02-28T11:05:48.834+0800 I STORAGE  [initandlisten] WiredTiger message [1519787148:834614][6004:140707747730256], txn-recover: Recovering log 9 through 10
+2018-02-28T11:05:48.921+0800 I STORAGE  [initandlisten] WiredTiger message [1519787148:921693][6004:140707747730256], txn-recover: Recovering log 10 through 10
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] 
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] 
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-02-28T11:05:49.233+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-02-28T11:05:49.234+0800 I CONTROL  [initandlisten] 
+2018-02-28T11:05:49.234+0800 I CONTROL  [initandlisten] 
+2018-02-28T11:05:49.234+0800 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-02-28T11:05:49.234+0800 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-02-28T11:05:49.234+0800 I CONTROL  [initandlisten] 
+2018-02-28T11:05:49.522+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './db/diagnostic.data'
+2018-02-28T11:05:49.524+0800 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-02-28T11:05:56.866+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:50938 conn: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.3.9600" }, platform: "Node.js v8.4.0, LE, mongodb-core: 2.1.18" }
+2018-02-28T11:18:24.711+0800 I CONTROL  [thread3] Ctrl-C signal
+2018-02-28T11:18:24.711+0800 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2018-02-28T11:18:24.712+0800 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-02-28T11:18:24.712+0800 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: 由于线程退出或应用程序请求，已中止 I/O 操作。
+2018-02-28T11:18:24.712+0800 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: 由于线程退出或应用程序请求，已中止 I/O 操作。
+2018-02-28T11:18:24.713+0800 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-02-28T11:18:24.719+0800 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-02-28T11:18:25.083+0800 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-02-28T11:18:25.083+0800 I CONTROL  [consoleTerminate] now exiting
+2018-02-28T11:18:25.084+0800 I CONTROL  [consoleTerminate] shutting down with code:12
+2018-03-05T12:37:49.727+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] MongoDB starting : pid=3680 port=27018 dbpath=./db 64-bit host=LiLiuzhu-PC
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] db version v3.6.2
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] git version: 489d177dbd0f0420a8ca04d39fd78d0a2c539420
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] modules: none
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] build environment:
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-03-05T12:37:50.476+0800 I CONTROL  [initandlisten] options: { config: "mongo.conf", net: { port: 27018 }, storage: { dbPath: "./db", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./db/logs/mongo.log", quiet: true } }
+2018-03-05T12:37:50.478+0800 I -        [initandlisten] Detected data files in ./db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-03-05T12:37:50.478+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3514M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-03-05T12:37:50.871+0800 I STORAGE  [initandlisten] WiredTiger message [1520224670:871433][3680:140721703686992], txn-recover: Main recovery loop: starting at 10/11776
+2018-03-05T12:37:51.024+0800 I STORAGE  [initandlisten] WiredTiger message [1520224671:23533][3680:140721703686992], txn-recover: Recovering log 10 through 11
+2018-03-05T12:37:51.126+0800 I STORAGE  [initandlisten] WiredTiger message [1520224671:126606][3680:140721703686992], txn-recover: Recovering log 11 through 11
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] 
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] 
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-03-05T12:37:51.720+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] 
+2018-03-05T12:37:51.721+0800 I CONTROL  [initandlisten] 
+2018-03-05T12:37:51.722+0800 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-03-05T12:37:51.722+0800 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-03-05T12:37:51.722+0800 I CONTROL  [initandlisten] 
+2018-03-05T12:37:52.131+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './db/diagnostic.data'
+2018-03-05T12:37:52.133+0800 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-03-05T12:39:11.088+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:53323 conn: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "6.3.9600" }, platform: "Node.js v8.4.0, LE, mongodb-core: 2.1.18" }
+2018-03-05T13:43:11.207+0800 I CONTROL  [thread3] Ctrl-C signal
+2018-03-05T13:43:11.208+0800 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2018-03-05T13:43:11.208+0800 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-03-05T13:43:11.208+0800 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: 由于线程退出或应用程序请求，已中止 I/O 操作。
+2018-03-05T13:43:11.208+0800 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: 由于线程退出或应用程序请求，已中止 I/O 操作。
+2018-03-05T13:43:11.209+0800 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-03-05T13:43:11.217+0800 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-03-05T13:43:11.479+0800 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-03-05T13:43:11.480+0800 I CONTROL  [consoleTerminate] now exiting
+2018-03-05T13:43:11.480+0800 I CONTROL  [consoleTerminate] shutting down with code:12
